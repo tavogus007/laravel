@@ -1,6 +1,6 @@
 @extends('layout.landing')
 
 @section('title','about')
-@section('section')
+@section('content')
     <h1>About</h1>
 @endsection
