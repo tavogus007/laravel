@@ -1,13 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
 
-
-Route::view('/','index')->name('index');
-
-
-// Route::get('mi/ruta/',ControladorDeLaRuta)
-// Route::post('mi/ruta/',ControladorDeLaRuta)
-// Route::put('mi/ruta/',ControladorDeLaRuta)
-// Route::delete('mi/ruta/',ControladorDeLaRuta)
-// Route::patch('mi/ruta/',ControladorDeLaRuta)
+Route::get('/', [UserController::class, 'index'])->name('user.index');
