@@ -6,6 +6,15 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello world</h1>
+    <h1>User list:</h1>
+    @if($users->isEmpty())
+        <p>The user list is empty</p>
+    @else
+        <ul>
+            @foreach ( $users as $user)
+                <li>{{ $user->name }}</li>
+            @endforeach
+        </ul>
+    @endif
 </body>
 </html>
